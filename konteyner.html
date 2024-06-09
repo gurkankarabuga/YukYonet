@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konteyner Kontrol Numarası Doğrulama</title>
+    <link rel="stylesheet" href="konteyner.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">YÜK YÖNET</div>
+        <div class="header-right">
+            <button onclick="window.location.href='file:///C:/Users/User/Desktop/Y%C3%BCk%20Y%C3%B6net/index.html'">Ana Sayfaya Dön</button>
+        </div>
+    </header>
+    <main>
+        <h1>Konteyner Kontrol Numarası Doğrulama</h1>
+        <div class="form-container">
+            <input type="text" id="container-number" placeholder="Konteyner Numarasını Girin (4 harf 6 rakam)">
+            <button onclick="calculateCheckDigit()">Hesapla</button>
+        </div>
+        <div id="result"></div>
+        <div id="explanation"></div>
+    </main>
+    <script src="konteyner.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navlun Taşıma Bedeli Hesaplayıcı</title>
+    <link rel="stylesheet" href="navlun.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 50px;
+            background-color: #2a2a72;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        body {
+            margin: 0;
+            padding-top: 60px; /* header height */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 80px;
+        }
+        button {
+            background-color: #2a2a72;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size: 1.5em; font-weight: bold;">YÜK YÖNET</div>
+       <button onclick="window.location.href='file:///C:/Users/User/Desktop/Y%C3%BCk%20Y%C3%B6net/index.html'" style="background-color: #2a2a72; border: none; color: white; padding: 15px 30px; cursor: pointer; margin-right: 50px; margin-top: 10px; font-size: 17px">Ana Sayfaya Dön</button>
+    </header>
+    <div class="container">
+        <h1>İstiflenebilir Mallar için Navlun Taşıma Bedeli Hesaplayıcı</h1>
+        <form id="freightForm">
+            <label for="transportType">Taşıma Şekli:</label>
+            <select id="transportType" required>
+                <option value="road">Karayolu</option>
+                <option value="air">Havayolu</option>
+                <option value="sea">Denizyolu</option>
+            </select>
+            
+            <label for="numPalettes">Gönderilecek Palet Sayısı:</label>
+            <input type="number" id="numPalettes" required>
+
+            <label for="dimensions">Bir Paletin Ölçüleri (cm):</label>
+            <input type="text" id="dimensions" placeholder="Uzunluk x Genişlik x Yükseklik" required>
+
+            <label for="grossWeight">Bir Paletin Brüt Ağırlığı (kg):</label>
+            <input type="number" id="grossWeight" required>
+
+            <label for="pricePerKg">Kg Başına Fiyat ($):</label>
+            <input type="number" step="0.01" id="pricePerKg" required>
+
+            <button type="button" onclick="calculateFreight()">Hesapla</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="navlun.js"></script>
+</body>
+</html>
