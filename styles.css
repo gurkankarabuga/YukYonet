@@ -50,7 +50,7 @@ header .logo img {
     bottom: 0;
     left: -150px;
     width: 230px;
-    animation: sail 10s linear infinite, wave 10s infinite;
+    animation: sail 8s linear infinite, wave 10s infinite;
 }
 
 @keyframes sail {
@@ -177,7 +177,7 @@ footer {
     top: 0;
     left: 0;
     width: 230px;
-    animation: drive 10s linear infinite;
+    animation: drive 8s linear infinite;
 }
 
 @keyframes drive {
@@ -207,7 +207,7 @@ footer {
     top: 0;
     left: -150px;
     width: 250px;
-    animation: fly 10s linear infinite;
+    animation: fly 8s linear infinite;
 }
 
 .train-container {
@@ -219,7 +219,7 @@ footer {
     bottom: 0;
     left: -150px;
     width: 250px;
-    animation: driveTrain 10s linear infinite;
+    animation: driveTrain 8s linear infinite;
 }
 
 @keyframes fly {
