@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+    <title>Yük Yönet | Incoterm 2023</title>
+</head>
+<body>
+    
+    <header>
+        <div class="nav-background">
+
+        </div>
+      
+        <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+       <ul class="nav" id="nav">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="ınco.html">Incoterms 2023</a></li>
+            <li><a href="gumruk.html">Gümrük Rejimleri</a></li>
+            <li><a href="lpi.html">Türkiye'nin LPI Analizi ve Alt Kategorileri</a></li>
+            <li><a href="gelecek.html">Dünyada Lojistiğin Geleceği 2024 ve Ötesi</a></li>
+			<li><a href="odeme.html">Uluslararası Ticarette Ödeme Şekilleri</a></li>
+			<li><a href="navlun.html">Navlun Fiyatı Hesaplaması</a></li>
+			<li><a href="sera.html">Sera Gazı Emisyonu Hesaplaması</a></li>
+			<li><a href="konteyner.html">Konteyner Kontrol Numarası Hesaplaması</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+
+       <div class="header-text">
+           <h1>Incoterms 2023</h1>
+           <button class="btn" title="Devamını Oku"><a href="#start">Devamını Oku</a></button>
+       </div>
+    </header>
+
+    <main>
+        <h1 id="start">Incoterms 2023</h1>
+
+        <hr class="h-line">
+
+        <!--doupravit pointu textu-->
+        <p> 
+            Incoterms (International Commercial Terms) Ticari sözleşmelerde kullanılan çeşitli teslim şekillerini ve bu teslim şekillerine göre satıcı ve alıcının yükümlülüklerini tanımlar. Incoterms, Ticaretin kolaylaştırılması ve anlaşmazlıkların azaltılması amacıyla periyodik olarak güncellenen bir kılavuz niteliğindedir.
+        </p>
+
+        <img src="img/incoterms.jpeg" alt="ıncoterms" class="image-leaf">
+
+        <h2>Incoterms 2023'teki Teslim Şekilleri</h2>
+
+        <hr class="h-line">
+
+        <!--tabulky-->
+            <!--flexbox-->
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1"> <!--leva-->
+                    <div class="goals">
+					
+                        <img src="img/EXW.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                             İhracatçının İş Yerinde Teslim(EXW); Tüm masraf ve riskler ithalatçıya ait olmak üzere eşyanın, ihracatçının depo ya da fabrikası gibi belirlenen yerde teslim edilmesidir.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-item flexbox-item-2"> <!--prava-->
+                    <div class="goals">
+                        <img src="img/fca.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                           Taşıyıcıya Teslim(FCA); Eşyanın, ithalatçının belirlediği taşıyıcıya, ihracatçının ülkesinde belirlenen yerde teslim edilmesidir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--flexbox-->
+
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1"> <!--leva-->
+                    <div class="goals">
+                        <img src="img/fas.jpeg" alt="Job" class="image-leaf">
+            
+                        <p>
+                           Gemi yanında Teslim(FAS); Eşyanın belirlenen deniz taşıtına yüklenmek üzere rıhtım ya da yükleme alanında teslim edilmesidir.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-item flexbox-item-2"> <!--prava-->
+                    <div class="goals">
+                        <img src="img/fob.jpeg" alt="eco-energy" class="image-leaf">
+            
+                        <p>
+                           Gemi Bordasında Teslim(FOB); Eşyanın belirlenen deniz taşıtına yüklenerek taşıma, sigorta gibi maliyet ve sorumlulukların ithalatçıya devredildiği teslim şeklidir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1">
+                    <div class="goals">
+                        <img src="img/cfr.jpeg" alt="factory" 
+                        class="image-leaf">
+                        <p>
+                            Navlun Ödenmiş Halde Teslim(CFR); Eşyanın belirlenen deniz taşıtına ait taşıma bedelinin (navlun) ihracatçı tarafından ödendiği, sigorta ve diğer masrafların ithalatçıya ait olduğu teslimdir.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-item flexbox-item-2">
+                    <div class="goals">
+                        <img src="img/CIF.jpeg" alt="factory" 
+                        class="image-leaf">
+                        <p>
+                           Masraflar, Navlun, Sigorta Ödenmiş Teslim(CIF); Yükleme masrafları ile eşyanın ithalatçının ülkesinde belirlenen teslim alanına kadar taşıma bedeli, sigorta masrafları karşılanmış olarak teslim edilmesidir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+  <!--flexbox-->
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1"> <!--leva-->
+                    <div class="goals">
+					
+                        <img src="img/cpt.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                             Taşıma Ücreti Ödenmiş Teslim(CPT); Belirlenen taşıta ait taşıma bedelinin (navlun) ihracatçı tarafından ödendiği, sigorta ve diğer masrafların ithalatçıya ait olduğu teslimdir.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-item flexbox-item-2"> <!--prava-->
+                    <div class="goals">
+                        <img src="img/cip.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                            Taşıma Ücreti, Sigorta ödenmiş Teslim(CIP); İhracatçının taşıma ücreti ile sigorta masraflarını ithalatçının ülkesinde belirlenen noktaya kadar ödediği teslim şeklidir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+  <!--flexbox-->
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1"> <!--leva-->
+                    <div class="goals">
+					
+                        <img src="img/dap.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                              Belirlenen Yerde Teslim(DAP); Eşya ithalatçının ülkesinde ve belirlenen adrese vergiler hariç tüm masraflar ödenmiş olarak teslim edilir.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox-item flexbox-item-2"> <!--prava-->
+                    <div class="goals">
+                        <img src="img/dpu.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                          DAT’ın yerini almış bu teslim şekli,(DPU) ihracatçı malları gümrükten geçirdikten sonra ana taşıyıcıya yükler ve kararlaştırılan varış yerinde boşaltır. Gümrükleme, gümrük vergisi ve diğer masraflar ithalatçıya aittir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+			
+        <!--btn-->
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <script src="to-top.js"></script>
+
+    </main>
+
+  <!--flexbox-->
+            <div class="flexbox-container">
+                <div class="flexbox-item flexbox-item-1"> <!--leva-->
+                    <div class="goals">
+					
+                        <img src="img/ddp.jpeg" alt="image-leaf" class="image-leaf">
+            
+                        <p>
+                             Gümrük Vergileri Ödenmiş Halde Teslim(DDP); Eşyanın ithalatçının ülkesinde tüm masraflar ve gümrük vergileri ödenmiş olarak teslim edilmesidir.
+              </p>
+                    </div>
+                </div>
+            </div>
+</body>
+ <footer>
+        <div class="social-media">
+		<class="image-lnk.png">
+		<center>
+            <a href="https://www.linkedin.com/in/ahmet-g%C3%BCrkan-karabu%C4%9Fa-030b541a7/"><img src="lnk.png" alt="LinkedIn"></a>
+			</center>
+        </div>
+        <div class="contact-info">
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

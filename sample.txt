@@ -1,0 +1,22 @@
+<div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1"></div>
+            <div class="flexbox-item flexbox-item-2"></div>
+        </div>
+
+        <img src="img/leaf.png" alt="leaf" class="image-leaf">
+
+        #41B3A3
+        #5CDB95
+        #C2CAC0
+        #cafafe
+        
+        #EAE7DC
+
+        <p>Vypracoval: <i>Tomáš Suchanek (SPŠ Karviná)</i></p>
+
+        <p>
+            <i>Zdroje:</i> <br>
+            <a href="https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_cs" title="otevřít odkaz" target="_blank">Green Deal - Evropská unie</a> <br>
+            <a href="https://cs.wikipedia.org/wiki/Zelen%C3%A1_dohoda_pro_Evropu" title="otevřít odkaz" target="_blank">Green Deal - Wikipedia</a> <br>
+            <a href="https://euractiv.cz/section/energeticka-bezpecnost/opinion/green-deal-je-mrtev-at-zije-green-deal/" title="otevřít odkaz" target="_blank">Green Deal - euractiv.cz</a>
+        </p>
