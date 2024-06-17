@@ -1,4 +1,3 @@
-/**CSS GREEN DEAL**/
 * {
     padding: 0;
     margin: 0;
@@ -11,14 +10,13 @@ html {
 }
 /***HEADER***/
 header {
-background: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0,0.4)), url("img/main-bcg.png");
-background-size: cover;
-height: 100vh;
-background-attachment: fixed;
-z-index: 0;
-width: auto;
-width: 100%;
-animation: backgroundSlide 50s infinite;
+    background: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0,0.4)), url("img/main-bcg.png");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    z-index: 0;
+    width: 100%;
+    animation: backgroundSlide 50s infinite;
 }
 
 @keyframes backgroundSlide {
@@ -50,38 +48,37 @@ animation: backgroundSlide 50s infinite;
 
 .header-text {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	
 }
 .header-text h1 {
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 5vw;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
-    word-spacing: 3px;
-    letter-spacing: 1.5px;
+    word-spacing: 0.2em;
+    letter-spacing: 0.08em;
     background: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0,0.2));
-    border-radius: 5px;
-    padding: 2.5px;
+    border-radius: 0.3em;
+    padding: 0.2em;
     transition: .3s ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
 }
 .btn {
     display: inline-block;
-    border: 2px solid #006400;
+    border: 0.1em solid #006400;
     background-color: #006400;
-    letter-spacing: 1px;
-    padding: 5px 10px;
-    margin-top: 7px;
-    border-radius: 10px;
+    letter-spacing: 0.08em;
+    padding: 0.3em 0.6em;
+    margin-top: 0.5em;
+    border-radius: 0.6em;
     transition: .3s;
 }
 .btn a {
-    font-size: 28px;
+    font-size: 1.75vw;
     text-decoration: none;
     color: white;
 }
@@ -103,60 +100,60 @@ animation: backgroundSlide 50s infinite;
     .header-text h1 {
         text-align: center;
         color: white;
-        font-size: 42px;
+        font-size: 10vw;
         text-transform: uppercase;
-        word-spacing: 3px;
-        letter-spacing: 1.5px;
+        word-spacing: 0.2em;
+        letter-spacing: 0.08em;
     }
     .btn {
         display: block;
         width: 100%;
-        padding: 5px 15px;
-        margin-top: 7px;
-        border-radius: 10px;
+        padding: 0.3em 1em;
+        margin-top: 0.5em;
+        border-radius: 0.6em;
     }
     .btn a {
-        font-size: 20px;
+        font-size: 5vw;
         text-decoration: none;
         color: white;
     }
 }
 /***Header-menu***/
 #menu {
-    width: 35px;
-    height: 30px;
-    margin: 30px 0 10px 10px;
+    width: 7vw;
+    height: 6vw;
+    margin: 2vw 0 2vw 2vw;
     cursor: pointer;
 }
 .bar {
-    height: 5px;
+    height: 1vw;
     width: 100%;
     background-color: white;
     display: block;
-    border-radius: 5px;
-    transition: 0.4s ease
+    border-radius: 0.3vw;
+    transition: 0.4s ease;
 }
 #bar1 {
-    transform: translateY(-4px);
+    transform: translateY(-1.3vw);
 }
 #bar3 {
-    transform: translateY(4px);
+    transform: translateY(1.3vw);
 }
 .nav li a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 .nav li a:hover {
     font-weight: bold;
 }
 .nav li {
     list-style: none;
-    padding: 16px 0;
+    padding: 1vw 0;
 }
 .nav {
     padding: 0;
-    margin: 0 20px;
+    margin: 0 2vw;
     transition: 0.3s ease;
     display: none;
 }
@@ -169,7 +166,7 @@ animation: backgroundSlide 50s infinite;
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px  100px 120px;
+    margin: 3vw  8vw 10vw;
     background: radial-gradient(circle, white, white);
     border-radius: 100%;
     transition: 0.3s ease;
@@ -178,29 +175,29 @@ animation: backgroundSlide 50s infinite;
     z-index: 2;
 }
 .change-bg {
-    width: 855px;
-    height: 955px;
+    width: 70vw;
+    height: 80vw;
     transform: translate(-45%, -40%);
 }
 .change .bar {
     background-color: black;
 }
 .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(1.3vw) rotateZ(-45deg);
 }
 .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
+    transform: translateY(-2vw) rotateZ(45deg);
 }
 .change #bar2 {
     opacity: 0;
 }
-.change{
-	display: block;
+.change {
+    display: block;
 }
 /*navbar*/
 .nav-wrapper {
     width: 100%;
-    height: 80px;
+    height: 5vw;
     background-color: white;
     z-index: 1000;
 }
@@ -214,8 +211,8 @@ animation: backgroundSlide 50s infinite;
     text-decoration: none;
     color: #05386B;
     font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 1.25vw;
+    letter-spacing: 0.1em;
 }
 .nav-wrapper li a:hover {
     color: black;
@@ -223,57 +220,57 @@ animation: backgroundSlide 50s infinite;
 }
 .nav-wrapper .left-side {
     float: left;
-    margin: 0 0 0 120px;
+    margin: 0 0 0 5%;
 }
 .nav-wrapper .left-side li {
     display: inline-block;
-    padding: 20px 20px 20px 20px;
+    padding: 1.25vw;
 }
 .nav-wrapper .right-side {
     float: right;
-    margin: 0 100px 0 0;
+    margin: 0 5% 0 0;
 }
 .nav-wrapper .right-side li {
     display: inline-block;
-    padding: 20px 20px 20px 20px;
+    padding: 1.25vw;
 }
 /*Responsible-navbar*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 150px) and (max-width: 600px) {
     .nav-wrapper a {
         text-decoration: none;
         color: #05386B;
         font-weight: bold;
-        font-size: 12px;
-        letter-spacing: 2px;
+        font-size: 2.5vw;
+        letter-spacing: 0.1em;
     }
     .nav-wrapper .left-side {
         float: left;
-        margin: 0 0 0 60px;
+        margin: 0 0 0 3vw;
     }
     .nav-wrapper .right-side {
         float: right;
-        margin: 0 50px 0 0;
+        margin: 0 3vw 0 0;
     }
 }
 /*Fake text*/
 .fake-body {
-    margin: 50px 0;
+    margin: 3vw 0;
 }
 .fake-body p {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-size: 22px;
-    margin: 35px 20%;
+    font-size: 2vw;
+    margin: 2.5vw 10%;
 }
 /***GREEN-DEAL***/
 .green-deal {
     background-color: white;
-    margin: 20px 12%;
-    border-radius: 10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #05386B;
+    margin: 2vw 10%;
+    border-radius: 0.6em;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border: 0.1em solid #05386B;
 }
 /*colors*/
 .green {
@@ -293,14 +290,14 @@ animation: backgroundSlide 50s infinite;
 }
 .green-bg {
     background-color: #5CDB95;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1vw;
+    border-radius: 0.6em;
     color: white;
 }
 .blue-bg {
     background-color: #05386B;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1vw;
+    border-radius: 0.6em;
     color: white;
 }
 /***Podnadpisy******/
@@ -309,31 +306,31 @@ animation: backgroundSlide 50s infinite;
 }
 .h3 {
     color: black;
-    margin: 35px 20%;
+    margin: 3vw 10%;
     text-align: center;
 }
 /***Main intro text***/
 main h1 {
     text-align: center;
-    margin: 35px;
-    font-size: 60px;
+    margin: 3vw;
+    font-size: 6vw;
 }
 .podtext {
     text-align: center;
-    font-size: 30px;
-    margin: 20px;
+    font-size: 3vw;
+    margin: 2vw;
     color: dimgray;
 }
 .podtext2 {
-    font-size: 32px;
+    font-size: 3.2vw;
 }
 .podtext3 {
-    margin: 6px 10%;
+    margin: 2vw 10%;
 }
 main p {
     text-align: center;
-    font-size: 32px;
-    margin: 40px 10%;
+    font-size: 3.2vw;
+    margin: 4vw 10%;
 }
 main p a {
     text-decoration: none;
@@ -345,16 +342,16 @@ main p a:hover {
 }
 main h2 {
     text-align: center;
-    margin: 15px;
-    font-size: 42px;
+    margin: 2vw;
+    font-size: 4.2vw;
 }
 .citace {
     color: rgb(67, 67, 67);
 }
 .cite-name {
     text-align: right;
-    margin: 10px 20px;
-    font-size: 28px;
+    margin: 2vw 2%;
+    font-size: 2.8vw;
 }
 /*shrnuti obrazek*/
 .shrnuti_img {
@@ -362,11 +359,11 @@ main h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border-radius: 7px;
+    border-radius: 0.4em;
 }
 /*uvodni video*/
 .main-vid {
-    margin: 25px;
+    margin: 2.5vw;
 }
 /*responsible IFRAME 16:9*/
 .container {
@@ -409,35 +406,35 @@ main h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 258px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    height: 15vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 .image-carbon-site {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 168px;/*když tak zvětšit*/
+    height: 10vw;
 }
 /***Responsible-main***/
 @media only screen and (max-width: 800px) {
     main p {
-        font-size: 28px;
+        font-size: 7vw;
     }
     main h1 {
         text-align: center;
-        margin: 20px;
-        font-size: 48px;
+        margin: 2vw;
+        font-size: 12vw;
     }
     main h2 {
         text-align: center;
-        margin: 15px;
-        font-size: 34px;
+        margin: 1.5vw;
+        font-size: 10vw;
     }
     .podtext {
         text-align: center;
-        font-size: 24px;
-        margin: 20px;
+        font-size: 6vw;
+        margin: 2vw;
         color: dimgray;
     }
     /**responsible-leaf**/
@@ -445,41 +442,41 @@ main h2 {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 80px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        height: 20vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
     }
 }
 /********horizontal line*******/
 .h-line {
     background-color: black;
-    border: 1px solid black;
-    margin: 25px 35%;
+    border: 0.1em solid black;
+    margin: 2vw 35%;
 }
 /***footer***/
 footer {
     background-color: #05386B;
     color: white;
-    padding: 15px 20px;
+    padding: 1vw 2vw;
 }
 footer p {
     text-align: center;
-    font-size: 24px;
+    font-size: 2.4vw;
 }
 /***responzible-footer***/
 @media only screen and (max-width: 800px) {
     footer p {
-        font-size: 20px;
+        font-size: 5vw;
     }
 }
 /***To-Top.btn***/
 .to-top {
     background-color: white;
     position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 50px;
-    height: 50px;
+    bottom: 1.6vw;
+    right: 3.2vw;
+    width: 5vw;
+    height: 5vw;
     color: black;
     border-radius: 50%;
     display: flex;
@@ -489,10 +486,10 @@ footer p {
     text-decoration: none;
     pointer-events: none;
     transition: all .3s;
-    border: 2px solid black;
+    border: 0.1em solid black;
 }
 .to-top.active {
-    bottom: 32px;
+    bottom: 3.2vw;
     pointer-events: auto;
     opacity: 1;
 }
@@ -507,19 +504,19 @@ footer p {
 }
 .flexbox-item {
     width: 50%;
-    margin: 10px;
+    margin: 1vw;
 }
 .flexbox-item-1 {
-    min-height: 300px;
+    min-height: 15vw;
 }
 .flexbox-item-1 h2 {
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 .flexbox-item-2 {
-    min-height: 300px;
+    min-height: 15vw;
 }
 .flexbox-border {
-    border: 2px solid black;
+    border: 0.1em solid black;
 }
 /***responsible-flexbox***/
 @media (max-width: 750px) {
@@ -529,23 +526,23 @@ footer p {
         margin: 0;
     }
     .flexbox-item p {
-        font-size: 22px;
+        font-size: 2.2vw;
         text-align: center;
     }
 }
 /***Goals***/
 .goals {
     background-color: #EAE7DC;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    margin: 0.5vw;
+    padding: 1vw;
     transition: .3s;
 }
 .goals:hover {
     transform: scale(1.02);
 }
 .social-media a img {
-    width: 70px;
-    margin: 0 10px;
+    width: 7vw;
+    margin: 0 1vw;
 }
