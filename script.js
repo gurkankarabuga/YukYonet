@@ -10,7 +10,7 @@ function onClickMenu() {
         method: 'GET',
         dataType: 'json',
         data: {
-            rss_url: 'https://www.transmedya.com/rss/lojistik',
+            rss_url: 'https://https://www.ntv.com.tr/ekonomi.rss',
             api_key: 'YOUR_API_KEY', // Burada geçici bir API anahtarı kullanabilirsiniz
             count: 5
         },
