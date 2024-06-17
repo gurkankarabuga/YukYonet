@@ -1,23 +1,15 @@
-// Menü açma/kapama işlemi
 function onClickMenu() {
-    document.getElementById("menu").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('nav');
+    menu.classList.toggle('change');
+    nav.classList.toggle('change');
 }
 
-// Scroll to top
-window.onscroll = function() {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.querySelector(".to-top").style.display = "block";
+window.addEventListener('scroll', () => {
+    const toTop = document.querySelector('.to-top');
+    if (window.pageYOffset > 100) {
+        toTop.classList.add('active');
     } else {
-        document.querySelector(".to-top").style.display = "none";
+        toTop.classList.remove('active');
     }
-}
-
-document.querySelector(".to-top").addEventListener("click", function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
