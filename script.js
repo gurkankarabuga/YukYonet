@@ -1,15 +1,8 @@
-function onClickMenu() {
-    const menu = document.getElementById('menu');
-    const nav = document.getElementById('nav');
-    menu.classList.toggle('change');
-    nav.classList.toggle('change');
+function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	
+	document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-window.addEventListener('scroll', () => {
-    const toTop = document.querySelector('.to-top');
-    if (window.pageYOffset > 100) {
-        toTop.classList.add('active');
-    } else {
-        toTop.classList.remove('active');
-    }
-});
+	
