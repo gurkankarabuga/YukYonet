@@ -120,9 +120,9 @@ header {
 }
 /***Header-menu***/
 #menu {
-    width: 7vw;
-    height: 6vw;
-    margin: 2vw 0 2vw 2vw;
+    width: 3.5vw;
+    height: 3vw;
+    margin: 3vw 0 10vw 10vw;
     cursor: pointer;
 }
 .bar {
