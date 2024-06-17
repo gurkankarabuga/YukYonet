@@ -120,9 +120,9 @@ header {
 }
 /***Header-menu***/
 #menu {
-    width: 3.5vw;
-    height: 3vw;
-    margin: 3vw 0 10vw 10vw;
+    width: 7vw;
+    height: 6vw;
+    margin: 2vw 0 2vw 2vw;
     cursor: pointer;
 }
 .bar {
@@ -166,7 +166,7 @@ header {
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px  100px 120px;
+    margin: 3vw  8vw 10vw;
     background: radial-gradient(circle, white, white);
     border-radius: 100%;
     transition: 0.3s ease;
@@ -175,8 +175,8 @@ header {
     z-index: 2;
 }
 .change-bg {
-    width: 855px;
-    height: 955px;
+    width: 70vw;
+    height: 80vw;
     transform: translate(-45%, -40%);
 }
 .change .bar {
