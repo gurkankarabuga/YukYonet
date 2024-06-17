@@ -175,8 +175,8 @@ header {
     z-index: 2;
 }
 .change-bg {
-    width: 100vw;
-    height: 100vw;
+    width: 85vw;
+    height: 95vw;
     transform: translate(-45%, -40%);
 }
 .change .bar {
