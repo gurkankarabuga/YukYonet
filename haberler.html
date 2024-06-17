@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <title>Yük Yönet | Lojistik Haberleri</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-background"></div>
+
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="ınco.html">Incoterms 2023</a></li>
+                <li><a href="gumruk.html">Gümrük Rejimleri</a></li>
+                <li><a href="lpi.html">Türkiye'nin LPI Analizi ve Alt Kategorileri</a></li>
+                <li><a href="gelecek.html">Dünyada Lojistiğin Geleceği 2024 ve Ötesi</a></li>
+                <li><a href="odeme.html">Uluslararası Ticarette Ödeme Şekilleri</a></li>
+                <li><a href="navlun.html">Navlun Fiyatı Hesaplaması</a></li>
+                <li><a href="sera.html">Sera Gazı Emisyonu Hesaplaması</a></li>
+                <li><a href="konteyner.html">Konteyner Kontrol Numarası Hesaplaması</a></li>
+                <li><a href="Haberler.html">Lojistik Haberleri</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <script src="script.js"></script>
+        <div class="header-text">
+            <h1>Lojistik Sektörünün Güncel Haberleri</h1>
+            <button class="btn" title="Devamını Oku"><a href="#start">Devamını Oku</a></button>
+        </div>
+    </header>
+
+    <main id="start">
+        <!-- Diğer içerikler -->
+        <h2>Güncel Haberler</h2>
+        <hr class="h-line">
+        <div id="rss-feeds"></div>
+        <!-- Diğer içerikler -->
+
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="to-top.js"></script>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <center>
+                <a href="https://www.linkedin.com/in/ahmet-g%C3%BCrkan-karabu%C4%9Fa-030b541a7/"><img src="lnk.png" alt="LinkedIn"></a>
+            </center>
+        </div>
+        <div class="contact-info">
+            <p></p>
+        </div>
+    </footer>
+
+    <script>
+        function onClickMenu() {
+            // Menü animasyonları
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+
+            // RSS beslemelerini yükleme
+            $.ajax({
+                url: 'https://api.rss2json.com/v1/api.json',
+                method: 'GET',
+                dataType: 'json',
+                data: {
+                    rss_url: 'https://www.transmedya.com/rss/lojistik',
+                    api_key: 'YOUR_API_KEY', // Burada geçici bir API anahtarı kullanabilirsiniz
+                    count: 5
+                },
+                success: function(response) {
+                    if (response.status === 'ok') {
+                        var output = '<ul>';
+                        $.each(response.items, function(index, item) {
+                            output += `<li><a href="${item.link}" target="_blank">${item.title}</a><br><small>${item.description}</small></li>`;
+                        });
+                        output += '</ul>';
+                        $('#rss-feeds').html(output);
+                    }
+                },
+                error: function() {
+                    $('#rss-feeds').html('<p>Haberler yüklenemedi. Lütfen daha sonra tekrar deneyiniz.</p>');
+                }
+            });
+        }
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
