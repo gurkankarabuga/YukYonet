@@ -549,3 +549,126 @@ footer p {
     width: 70px;
     margin: 0 10px;
 }
+
+/* Add the necessary mobile optimizations */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    form {
+        padding: 0 10px;
+    }
+    label, input, select, button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px;
+    }
+    .image-leaf, .image-carbon-site {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Update other specific styles for better mobile optimization */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2a2a72;
+    font-size: 2em;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexbox-item {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.flexbox-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for navigation menu */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav li {
+    padding: 10px 0;
+}
+
+.nav li a {
+    color: #05386B;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg {
+    display: none;
+}
+
+/* Ensuring header text is readable */
+.header-text h1 {
+    font-size: 3em;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .header-text h1 {
+        font-size: 2em;
+    }
+
+    .header-text {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
